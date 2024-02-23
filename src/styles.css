@@ -1,6 +1,9 @@
 body {
   background-color: lavender;
   font-family: "merriweather";
+  background-image: url("japan-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -33,7 +36,6 @@ form {
   background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .instructions {
@@ -57,12 +59,20 @@ form {
   padding: 14px 24px;
 }
 
+.hint {
+  margin-top: 5px;
+  line-height: 1.5;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
 .poem {
   font-size: 16px;
   background-color: whitesmoke;
   padding: 20px;
   line-height: 2;
   border-left: 3px solid #885df1;
+  border-right: 3px solid #885df1;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   text-align: center;
 }
