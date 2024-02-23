@@ -13,7 +13,7 @@ function generatePoem(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
   let context =
-    "You are a Haiku expert and enjoys to write them. Your mission is to generate a haiku; no more than 17 syllables, composed of 3 lines; after each line there's a <br /> - every first line has 5 syllables, second line has 7 syllables, and the third line has 5 syllables. ign the poem with 'SheCodes AI' inside a <strong> element at the end of the poem and NOT at the beginning.";
+    "You are a Haiku expert and enjoys to write them. Your mission is to generate a haiku; no more than 17 syllables, composed of 3 lines; after each line there's a <br /> - every first line has 5 syllables, second line has 7 syllables, and the third line has 5 syllables. Sign the poem with 'SheCodes AI' inside a <strong> element at the end of the poem and NOT at the beginning.";
 
   let prompt = `User instructions: Generate a Haiku about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
